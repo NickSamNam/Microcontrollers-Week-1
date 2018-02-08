@@ -1,0 +1,332 @@
+
+B5.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000040  00800100  00000194  00000208  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000194  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000248  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000278  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000028  00000000  00000000  000002b4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000009c3  00000000  00000000  000002dc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000869  00000000  00000000  00000c9f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000035a  00000000  00000000  00001508  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000034  00000000  00000000  00001864  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000442  00000000  00000000  00001898  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000b6  00000000  00000000  00001cda  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000018  00000000  00000000  00001d90  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e4 e9       	ldi	r30, 0x94	; 148
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 34       	cpi	r26, 0x40	; 64
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	13 d0       	rcall	.+38     	; 0xda <main>
+  b4:	6d c0       	rjmp	.+218    	; 0x190 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <wait>:
+const int snek_startup[snek_size_startup][snek_size_x] = {{0x00, 0x00, 0x00, 0x01}, {0x00, 0x00, 0x01, 0x01}, {0x00, 0x01, 0x01, 0x01}};
+const int snek_pattern[snek_size_y][snek_size_x] = {{0x01,0x01,0x01,0x01},{0x03,0x01,0x01,0x00}, {0x03,0x03,0x00,0x00},{0x03,0x02,0x02,0x00},{0x02,0x02,0x02,0x02},{0x00,0x02,0x02,0x06},\
+{0x00,0x00,0x06,0x06}, {0x00,0x04,0x04,0x06}};
+	
+void wait(int ms) {
+	for (int i = 0; i < ms; i++)
+  b8:	18 16       	cp	r1, r24
+  ba:	19 06       	cpc	r1, r25
+  bc:	6c f4       	brge	.+26     	; 0xd8 <wait+0x20>
+  be:	20 e0       	ldi	r18, 0x00	; 0
+  c0:	30 e0       	ldi	r19, 0x00	; 0
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  c2:	ef ec       	ldi	r30, 0xCF	; 207
+  c4:	f7 e0       	ldi	r31, 0x07	; 7
+  c6:	31 97       	sbiw	r30, 0x01	; 1
+  c8:	f1 f7       	brne	.-4      	; 0xc6 <wait+0xe>
+  ca:	00 c0       	rjmp	.+0      	; 0xcc <wait+0x14>
+  cc:	00 00       	nop
+  ce:	2f 5f       	subi	r18, 0xFF	; 255
+  d0:	3f 4f       	sbci	r19, 0xFF	; 255
+  d2:	82 17       	cp	r24, r18
+  d4:	93 07       	cpc	r25, r19
+  d6:	a9 f7       	brne	.-22     	; 0xc2 <wait+0xa>
+  d8:	08 95       	ret
+
+000000da <main>:
+}
+
+int main(void)
+{
+    /* Replace with your application code */
+	DDRA = 0xFF;
+  da:	8f ef       	ldi	r24, 0xFF	; 255
+  dc:	8a bb       	out	0x1a, r24	; 26
+	DDRB = 0xFF;
+  de:	87 bb       	out	0x17, r24	; 23
+	DDRC = 0xFF;
+  e0:	84 bb       	out	0x14, r24	; 20
+	DDRD = 0xFF;
+  e2:	81 bb       	out	0x11, r24	; 17
+		for (s = 0; s < snek_size_startup; s++)
+		{
+			PORTA = snek_startup[s][0];
+			PORTB = snek_startup[s][1];
+			PORTC = snek_startup[s][2];
+			PORTD = snek_startup[s][3];
+  e4:	01 e0       	ldi	r16, 0x01	; 1
+  e6:	0f 2e       	mov	r0, r31
+  e8:	f0 e4       	ldi	r31, 0x40	; 64
+  ea:	ef 2e       	mov	r14, r31
+  ec:	f1 e0       	ldi	r31, 0x01	; 1
+  ee:	ff 2e       	mov	r15, r31
+  f0:	f0 2d       	mov	r31, r0
+    while (1) 
+    {
+		int s;
+		for (s = 0; s < snek_size_startup; s++)
+		{
+			PORTA = snek_startup[s][0];
+  f2:	1b ba       	out	0x1b, r1	; 27
+			PORTB = snek_startup[s][1];
+  f4:	18 ba       	out	0x18, r1	; 24
+			PORTC = snek_startup[s][2];
+  f6:	15 ba       	out	0x15, r1	; 21
+			PORTD = snek_startup[s][3];
+  f8:	02 bb       	out	0x12, r16	; 18
+			wait(250);
+  fa:	8a ef       	ldi	r24, 0xFA	; 250
+  fc:	90 e0       	ldi	r25, 0x00	; 0
+  fe:	dc df       	rcall	.-72     	; 0xb8 <wait>
+    while (1) 
+    {
+		int s;
+		for (s = 0; s < snek_size_startup; s++)
+		{
+			PORTA = snek_startup[s][0];
+ 100:	1b ba       	out	0x1b, r1	; 27
+			PORTB = snek_startup[s][1];
+ 102:	18 ba       	out	0x18, r1	; 24
+			PORTC = snek_startup[s][2];
+ 104:	05 bb       	out	0x15, r16	; 21
+			PORTD = snek_startup[s][3];
+ 106:	02 bb       	out	0x12, r16	; 18
+			wait(250);
+ 108:	8a ef       	ldi	r24, 0xFA	; 250
+ 10a:	90 e0       	ldi	r25, 0x00	; 0
+ 10c:	d5 df       	rcall	.-86     	; 0xb8 <wait>
+    while (1) 
+    {
+		int s;
+		for (s = 0; s < snek_size_startup; s++)
+		{
+			PORTA = snek_startup[s][0];
+ 10e:	1b ba       	out	0x1b, r1	; 27
+			PORTB = snek_startup[s][1];
+ 110:	08 bb       	out	0x18, r16	; 24
+			PORTC = snek_startup[s][2];
+ 112:	05 bb       	out	0x15, r16	; 21
+			PORTD = snek_startup[s][3];
+ 114:	02 bb       	out	0x12, r16	; 18
+			wait(250);
+ 116:	8a ef       	ldi	r24, 0xFA	; 250
+ 118:	90 e0       	ldi	r25, 0x00	; 0
+ 11a:	ce df       	rcall	.-100    	; 0xb8 <wait>
+ 11c:	c1 2c       	mov	r12, r1
+ 11e:	d1 2c       	mov	r13, r1
+ 120:	33 c0       	rjmp	.+102    	; 0x188 <main+0xae>
+		int b;
+		for(b = 0; b < snek_blocks; b++)
+		{
+			for (y = 0; y < snek_size_y; y++)
+			{
+				PORTA = snek_pattern[y][0] << b*2;
+ 122:	88 81       	ld	r24, Y
+ 124:	99 81       	ldd	r25, Y+1	; 0x01
+ 126:	01 2e       	mov	r0, r17
+ 128:	02 c0       	rjmp	.+4      	; 0x12e <main+0x54>
+ 12a:	88 0f       	add	r24, r24
+ 12c:	99 1f       	adc	r25, r25
+ 12e:	0a 94       	dec	r0
+ 130:	e2 f7       	brpl	.-8      	; 0x12a <main+0x50>
+ 132:	8b bb       	out	0x1b, r24	; 27
+				PORTB = snek_pattern[y][1] << b*2;
+ 134:	8a 81       	ldd	r24, Y+2	; 0x02
+ 136:	9b 81       	ldd	r25, Y+3	; 0x03
+ 138:	01 2e       	mov	r0, r17
+ 13a:	02 c0       	rjmp	.+4      	; 0x140 <main+0x66>
+ 13c:	88 0f       	add	r24, r24
+ 13e:	99 1f       	adc	r25, r25
+ 140:	0a 94       	dec	r0
+ 142:	e2 f7       	brpl	.-8      	; 0x13c <main+0x62>
+ 144:	88 bb       	out	0x18, r24	; 24
+				PORTC = snek_pattern[y][2] << b*2;
+ 146:	8c 81       	ldd	r24, Y+4	; 0x04
+ 148:	9d 81       	ldd	r25, Y+5	; 0x05
+ 14a:	01 2e       	mov	r0, r17
+ 14c:	02 c0       	rjmp	.+4      	; 0x152 <main+0x78>
+ 14e:	88 0f       	add	r24, r24
+ 150:	99 1f       	adc	r25, r25
+ 152:	0a 94       	dec	r0
+ 154:	e2 f7       	brpl	.-8      	; 0x14e <main+0x74>
+ 156:	85 bb       	out	0x15, r24	; 21
+				PORTD = snek_pattern[y][3] << b*2;
+ 158:	8e 81       	ldd	r24, Y+6	; 0x06
+ 15a:	9f 81       	ldd	r25, Y+7	; 0x07
+ 15c:	01 2e       	mov	r0, r17
+ 15e:	02 c0       	rjmp	.+4      	; 0x164 <main+0x8a>
+ 160:	88 0f       	add	r24, r24
+ 162:	99 1f       	adc	r25, r25
+ 164:	0a 94       	dec	r0
+ 166:	e2 f7       	brpl	.-8      	; 0x160 <main+0x86>
+				wait(250);
+ 168:	82 bb       	out	0x12, r24	; 18
+ 16a:	8a ef       	ldi	r24, 0xFA	; 250
+ 16c:	90 e0       	ldi	r25, 0x00	; 0
+ 16e:	a4 df       	rcall	.-184    	; 0xb8 <wait>
+ 170:	28 96       	adiw	r28, 0x08	; 8
+		}
+		int y;
+		int b;
+		for(b = 0; b < snek_blocks; b++)
+		{
+			for (y = 0; y < snek_size_y; y++)
+ 172:	ec 16       	cp	r14, r28
+ 174:	fd 06       	cpc	r15, r29
+ 176:	a9 f6       	brne	.-86     	; 0x122 <main+0x48>
+ 178:	82 e0       	ldi	r24, 0x02	; 2
+ 17a:	c8 0e       	add	r12, r24
+ 17c:	d1 1c       	adc	r13, r1
+			PORTD = snek_startup[s][3];
+			wait(250);
+		}
+		int y;
+		int b;
+		for(b = 0; b < snek_blocks; b++)
+ 17e:	88 e0       	ldi	r24, 0x08	; 8
+ 180:	c8 16       	cp	r12, r24
+ 182:	d1 04       	cpc	r13, r1
+ 184:	09 f4       	brne	.+2      	; 0x188 <main+0xae>
+ 186:	b5 cf       	rjmp	.-150    	; 0xf2 <main+0x18>
+		{
+			for (y = 0; y < snek_size_y; y++)
+			{
+				PORTA = snek_pattern[y][0] << b*2;
+ 188:	1c 2d       	mov	r17, r12
+ 18a:	c0 e0       	ldi	r28, 0x00	; 0
+ 18c:	d1 e0       	ldi	r29, 0x01	; 1
+ 18e:	c9 cf       	rjmp	.-110    	; 0x122 <main+0x48>
+
+00000190 <_exit>:
+ 190:	f8 94       	cli
+
+00000192 <__stop_program>:
+ 192:	ff cf       	rjmp	.-2      	; 0x192 <__stop_program>
